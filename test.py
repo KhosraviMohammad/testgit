@@ -20,7 +20,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     try:
-        # Define the proxy configuration
         proxy = Proxy("http://127.0.0.1:2081")
 
         # Build the application with the proxy
@@ -30,6 +29,7 @@ def main():
 
         logger.info("Bot is starting...")
         app.run_polling()
+        # test
     except Exception as e:
         logger.error(f"Error initializing the bot: {e}")
 
