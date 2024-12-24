@@ -20,6 +20,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     try:
+        print("hello")
         # Define the proxy configuration
         proxy = Proxy("http://127.0.0.1:2081")
 
